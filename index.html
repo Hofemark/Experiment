@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Haven Tycoon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hero Haven Tycoon</h1>
+    <p>Recruit heroes, build your agency, and protect the city from escalating threats.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <div class="row">
+        <h2>City Monitor</h2>
+        <small>Live skyline + threat scanner</small>
+      </div>
+      <canvas id="cityCanvas" width="1160" height="220"></canvas>
+    </section>
+
+    <section class="panel stats" id="statsPanel"></section>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Hero Candidates</h2>
+        <p class="hint">Hire the best talent while balancing your budget.</p>
+        <div id="candidateList" class="cards"></div>
+      </article>
+
+      <article class="panel">
+        <h2>Your Roster</h2>
+        <p class="hint">Set activities when heroes are not on missions.</p>
+        <div id="heroList" class="cards"></div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Mission Board</h2>
+      <p class="hint">Select up to 3 available heroes per mission to tackle criminals, monsters, and supervillains.</p>
+      <div id="missionList" class="cards"></div>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Active Operations</h2>
+        <div id="activeOps"></div>
+      </article>
+
+      <article class="panel log">
+        <h2>Agency Log</h2>
+        <ul id="logList"></ul>
+      </article>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
